@@ -28,4 +28,5 @@ jobs:
         run: |
           npx ncc build index.ts
           zip -j deploy.zip ./dist/*
+          ls la
           aws lambda update-function-code --function-name=testlambda --zip-file=fileb://deploy.zip
