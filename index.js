@@ -75,7 +75,7 @@ export const handler = async (event) => {
             },
           })
         );
-        body = `Cliente eliminado con codigo ${event.pathParameters.id}`;
+        body = `Cliente eliminado con code ${event.pathParameters.id}`;
         break;
       default:
         throw new Error(`Método HTTP no compatible: ${event.httpMethod}`);
